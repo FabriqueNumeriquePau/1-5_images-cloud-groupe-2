@@ -17,6 +17,13 @@
       color: #fff;
       text-align: center;
     }
+    
+    #login {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      height: 50px;
+    }
   </style>
 </head>
 <body>
@@ -24,12 +31,12 @@
   <div id="login">
         <input type="text" placeholder="Enter Username" id="usrnm">
         <input type="password" placeholder="Enter Password" id="pass">
-        <button onclick="testlogin()">Submit</button>
+        <button onclick="testlogin()">Connect</button>
   </div>
   
-    <div id="error" style="display:none;">Wrong username/password</div>
-    <div id="error2" style="display:none;">File must be image (png, jpg, jpeg, gif)</div>
-    <div id="success" style="display:none;">Login successful</div>
+    <div id="error" style="display:none;text-align: center;">Wrong username/password</div>
+    <div id="error2" style="display:none;text-align: center;">File must be image (png, jpg, jpeg, gif)</div>
+    <div id="success" style="display:none;text-align: center;">Login successful</div>
 
   <div class="aligner" id="hidden" style="display:none;">
     <div id="drop"><h2>Drop images here!</h2></div>
@@ -112,3 +119,4 @@
 </body>
 <!-- Based on https://www.netlify.com/blog/2016/11/17/serverless-file-uploads/ -->
 </html>
+
